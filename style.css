@@ -1,3 +1,26 @@
 body {
-    margin: 20%;
+    margin: 5%;
+}
+
+.cover {
+    line-height: 2rem;
+    background-color: #f1f1f1;
+    padding: 10rem 2rem;
+    text-align: center;
+}
+
+.declare {
+    margin: 2rem;
+}
+
+.information {
+    margin: 5rem 0;
+}
+
+.table-of-content ol {
+    list-style-type: none;
+}
+
+div {
+    box-sizing: border-box;
 }
