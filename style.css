@@ -1,5 +1,10 @@
 body {
-    margin: 5%;
+    font-size: large;
+    line-height: 1cm;
+    margin: 10%;
+    @media screen and (max-width: 600px) {
+        margin: 5%;
+    }
 }
 
 .cover {
@@ -9,7 +14,9 @@ body {
     text-align: center;
 }
 
-
+div p {
+    font-weight: 24;
+}
 
 .declare {
     margin: 2rem;
@@ -19,9 +26,53 @@ body {
     margin: 5rem 0;
 }
 
-.table-of-content ol {
+.table-of-content ol{
     margin: 0;
     list-style-type: none;
+}
+
+.table-of-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table-of-content ol {
+    margin: 0;
+    
+}
+
+.table-of-content a {
+    display: flex;
+    flex-direction: row;
+}
+.table-of-content label {
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    color: #008bd6;
+}
+
+a::after {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
+    border-left: 0.3em solid;
+    vertical-align: middle;
+    margin-left: 0.5em;
+}
+
+a:visited {
+    color: #008bd6;
+}
+
+#table-of-content {
+    margin: auto;
+    align-items: center;
 }
 
 div {
