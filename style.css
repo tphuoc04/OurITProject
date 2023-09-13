@@ -54,18 +54,6 @@ a:hover {
     color: #008bd6;
 }
 
-a::after {
-    content: " ";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 0.3em solid transparent;
-    border-bottom: 0.3em solid transparent;
-    border-left: 0.3em solid;
-    vertical-align: middle;
-    margin-left: 0.5em;
-}
-
 a:visited {
     color: #008bd6;
 }
@@ -78,3 +66,14 @@ a:visited {
 div {
     box-sizing: border-box;
 }
+
+table, th, td {
+    border-radius: 20px;
+    padding: 10px;
+    border: black 1px solid;
+    border-collapse: collapse;
+  }
+
+  table {
+    
+    }
