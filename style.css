@@ -1,17 +1,17 @@
 body {
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5cm;
+    line-height: 1.4cm;
     background-color: antiquewhite;
 }
 
+
 .content {
-    height: 100%;
-    margin-top: 30px;
-    overflow: auto; 
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
 
 .logo {
     width: 70%;
@@ -59,11 +59,12 @@ div p {
 }
 
 .table-of-content {
+    line-height: 2rem;
+    font-size: medium;
     border-radius: 5px;
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
-
     width: 20%;
     margin-top: 20px;
     margin-bottom: 20px;
