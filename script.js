@@ -1,8 +1,7 @@
 addEventListener("DOMContentLoaded", (event) => {
-    const app = document.querySelector("#app");
-    const button = document.querySelector("#button");
+    const darkMode = document.getElementById("dark-mode");
     
-    button.addEventListener("click", () => {
-        app.innerHTML = "Hello World";
+    darkMode.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
     });
 });
