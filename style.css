@@ -3,9 +3,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5cm;
     background-color: antiquewhite;
-    @media screen and (max-width: 600px) {
-        margin: 5%;
-    }
 }
 
 .content {
