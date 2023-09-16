@@ -31,7 +31,7 @@ body {
     width: 100%;
     height: 9rem;
     max-height: 200px;
-    background-color: rgb(0, 0, 80);
+    background-color: rgba(0, 0, 80, 0.637);
 }
 .logo {
     max-width: 1000px;
@@ -76,13 +76,17 @@ div p {
     margin: 5rem 0;
 }
 
+.table-of-content hr {
+    border: 2px solid rgb(253, 0, 0);
+    margin: 0;
+}
 .table-of-content ol{
     margin: 0;
     list-style-type: none;
 }
 
 .table-of-content {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1a7;
     line-height: 1.5rem;
     font-size: medium;
     border-radius: 5px;
@@ -111,16 +115,14 @@ div p {
     font-weight: bold;
     text-align: center;
 }
-a {
+.table-of-content a, #button {
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 a:hover {
-    color: rgb(51, 51, 112)
+    color: rgb(0, 149, 255)
 }
 
-a:visited {
-    color: rgb(0, 0, 158)
-}
 
 #table-of-content {
     margin: auto;
