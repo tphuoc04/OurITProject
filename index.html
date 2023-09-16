@@ -31,8 +31,8 @@
             <p>
                 <ol id="table-of-content"> 
                     <li>
-                        <a href="#Team">1. Team Profile</a>
-                        <ol>
+                        <p id="button" onclick="toggleButton('TeamProfile', 'see-more')">1. Team Profile <span id='see-more'><</span></p>
+                        <ol id="TeamProfile">
                             <li><a href="#team-name">1.1 Team name</a></li>
                             <li>
                                 <a href="#personal-information">1.2 Personal Information</a>
@@ -48,23 +48,30 @@
                         
                     </li>
                     <li>
-                        <a href="#Project">3. Project Description</a>
-                        <li><a href="#Overview">3.1 Overview</a></li>
-                        <li><a href="#Topic">3.1.1 Topic</a></li>
-                        <li><a href="#Motivation">3.1.2 Motivation</a></li>
-                        <li><a href="#Landscape">3.1.3 Landscape</a></li>
-                        <li><a href="#Landscape">3.5 Aims</a></li>
-                        <li><a href="#Detail">3.2 Detail Description</a></li>
-                        <li><a href="#PlanandProgress">3.2.1 Plan and Proress</a></li>
-                        <li><a href="#role">3.2.2 Role</a></li>
-                        <li><a href="#scope">3.2.3 Scopes and Limits</a></li>
-                        <li><a href="#tool">3.2.4 Tools and Technologies</a></li>
-                        <li><a href="#testing">3.5 Testing</a></li>
+                        <p id='button' onclick="toggleButton('ProjectDes', 'see-more1')">3. Project Description <span id='see-more1'><</span></a>
+                            <p></p>
+                        <ol id="ProjectDes">
+                            <li><a href="#Overview">3.1 Overview</a></li>
+                            <li><a href="#Topic">3.1.1 Topic</a></li>
+                            <li><a href="#Motivation">3.1.2 Motivation</a></li>
+                            <li><a href="#Landscape">3.1.3 Landscape</a></li>
+                            <li><a href="#Detail">3.2 Detail Description</a></li>
+                            <li><a href="#Landscape">3.2.1 Aims</a></li>
+                            <li><a href="#PlanandProgress">3.2.2 Plan and Proress</a></li>
+                            <li><a href="#role">3.2.3 Role</a></li>
+                            <li><a href="#scope">3.2.4 Scopes and Limits</a></li>
+                            <li><a href="#tool">3.2.5 Tools and Technologies</a></li>
+                            <li><a href="#testing">3.2.6 Testing</a></li>
+                            <li><a href="#timeframe">3.2.7 Timeframe</a></li>
+                            <li><a href="#risks">3.2.8 Risks</a></li>
+                            <li><a href="#groupprocess">3.2.9 Group processes and communications</a></li>    
+                        </ol>
+                        <li><a href="#skill">4. Skills and Jobs</a></li>
+                        <li><a href="#grreflex">5. Group reflection</a></li>
                     </li>
                     <li><a href="#reference">Reference</a></li>
                 </ol>
             </p>
-            <!-- <button id="dark-mode">Dark Mode</button> -->
         </div>
         <div class="report">
             <div class="cover">
@@ -106,11 +113,11 @@
                 <div class="tool">
                     <h2 id="Tool">2. Tool</h2>
                     <article>
-                        <p>The website of our group page uses simple HTML, and CSS code to show our report in a simple way. It shows a report on Our IT Project, Assignment 3, including a table of contents that can get to the right part after clicking on it, always stick to the left of the pages so that we can easily go to the part that we want. </p>
-                        <p>Git has facilitated our process to build the website, we easy to maintain and control the version of our website code. Based on the git log we can see that our process work was very well, It helped us to check others' progress quickly when working on the group project.</p>
+                        <p>The website of our group page uses simple HTML, and CSS code to show our report simply. It shows a report on Our IT Project, Assignment 3. With CSS we style our website with a background image, a banner of the COSC2083 course on the top that we can click to go to the Canvas course site, including a table of contents that can get to the right part after clicking on the title and it always stick to the left of the pages so that we can easily go to the part that we want when we scrolling down. With Javascript, I coded a function for the button that can show more sub-pages in the team profile and project description.</p>
+                        <p>Git has facilitated our process to build the website, we easy to maintain and control the version of our website code. Based on the git log we can see that our process work was very well, It helped us to check others' progress quickly when working on the group project, and submit our work easily. Everyone has contributed their part by pushing it onto the GitHub repository. After finishing the assigned task, we use git to push our work onto the git repository and create a pull request, so that the team leader can check and merge the work into the main branch.</p>
                         <ol>
-                            <li><p>1. Website link: https://tphuoc04.github.io/OurITProject/</p></li>
-                            <li><p>2. Github Repository link: https://github.com/tphuoc04/OurITProject</p></li>
+                            <li><p>1. Website link: <a href="https://tphuoc04.github.io/OurITProject/">https://tphuoc04.github.io/OurITProject/</a></p></li>
+                            <li><p>2. Github Repository link: <a href="https://github.com/tphuoc04/OurITProject">https://github.com/tphuoc04/OurITProject</a></p></li>
                         </ol>
                     </article>
                 </div>
@@ -119,14 +126,8 @@
                     <h2 id="Project">3. Project</h2>
                     <article>
                         <h2 id="Overview">3.1 Overview</h2>
-                        <p>The system will be designed to visualize skin lesions and extract important details including color, texture and shape. Matchable properties are then found by comparing these properties with an extensive database of skin diseases known to exist. The system will be trained to detect patterns and make accurate predictions based on input data using machine learning. As a result, the system should be able to generate a list of potential diagnoses along with pertinent data and suggest therapy.</p>
-                        <p>For early detection of skin diseases and treatment, skin diseases must be applied to clinical practice. Making the right treatment decision for a patient depends on an accurate and prompt diagnosis. However, a wide range of skin problems and similarities in appearance make it difficult to understand skin conditions. Therefore, the goal of our project is to develop a reliable tool that can help dermatologists make informed choices.</p>
-                        <p>Our solution will help reduce stress on dermatologists and increase the overall efficiency of healthcare delivery by automating the analysis and detection of skin problems. Strong. In addition, it will be a useful resource for medical practitioners in isolated or hard-to-reach locations where a dermatologist's accessibility may be limited. Overall, the use of skin pathology in our project has the potential to radically transform dermatology practice and dramatically enhance patient care.</p>
-                    </article>
-        
-                    <article>
                         <h2 id="Topic">3.1.1 Topic</h2>
-                        <p>We plan to create a computer-based system for the analysis and diagnosis of skin pathologies as part of our research. The main goal is to develop a powerful tool that can help doctors accurately detect and classify various skin disorders. As a result, the diagnostic process will be much more accurate and efficient, resulting in better patient outcomes.</p>
+                        <p>We plan to create a computer-based system for the analysis and diagnosis of skin pathologies as part of our research. The main goal is to develop a powerful tool that can help people accurately detect and classify various skin disorders. As a result, the diagnostic process will be much more accurate and efficient, resulting in better patient outcomes.</p>
                         <p>The system will be designed to visualize skin lesions and extract important details including color, texture and shape. Matchable properties are then found by comparing these properties with an extensive database of skin diseases known to exist. The system will be trained to detect patterns and make accurate predictions based on input data using machine learning. As a result, the system should be able to generate a list of potential diagnoses along with pertinent data and suggest therapy.</p>
                     </article>
         
@@ -180,18 +181,22 @@
                             For machine learning development, we use these:
                             <li>Tensorflow 2.0, Keras libraries, a free and open-source library for machine learning, to build and evaluate machine learning models.</li>
                             <li>OpenCV4, to preprocess the image before feeding it into the algorithms.</li>
+                            <li>Python Programming languages, Numpy, and Pandas to preprocess the data.</li>
                         </ul>
                         <ul>
                             For Application development, we use:
                             <li> React Native, a free and open source for cross-platform development, we used to build the front end of the application for multiple platforms.</li>
                             <li>Express.js, a Node.js web application framework that gives many features for web and mobile development, we use this to build the API and backend for the application.</li>
+                            <li>Programming languages, such as Javascript and TypeScript.</li>
                         </ul>
                         <p>These libraries are crucial to build and complete the project. to this library, the reason for us to chose it is our team's members have some experience in developing a project with it. Our team used Keras and OpenCV to build, a model that can classify images, with React Native, we used it to build some simple applications, for example, a todo app, and a text app. We want to use these libraries so that we can improve the process of the project and make it more easy to develop and maintain.</p>
                     </article>
         
                     <article>
                         <h2 id="testing">3.2.6 Testing</h2>
-                        <p>The primary function and aim of our project is to detect skin diseases. To achieve this we need multiple steps and much progress so our goal is to build an application with the main function is detecting skin disease first. Many functionalities were considered when we planned for this project, but due to the limited time, we decided to prioritize the aim that detecting skin disease accurately at first. With many other functionalities, the problem of time may cause many difficulties, especially when developing projects one function may take lots of time to integrate into the product. So to make a perfect app we prioritize our first main function, the User Interface and User Experience of the app, and try to make things perfect in this scope.</p>
+                        <p>To detect whether the project is done or not, we decided to test it first on the machine learning algorithms to make sure the learning algorithms are working well then we will test on the product.</p>
+                        <p>We divide the data set into a test set and training set so that we can check whether the machine learning algorithms working well or not. Then we will test it on the application, using images that we can find on the internet, We can check that the application can detect what kind of disease is it, and this will dictate whether our app is working or not. But it would be better if we could check on real images, so one way to archive that is at the dermatology hospital, This will help fully because, with domain knowledge from a doctor, we can know that our app diagnoses the disease with precise probability.</p>
+                        <p>Overall, we will try to test to make sure that our application is working well, and we try to take more advice from the expert, a dermatology doctor, to know whether our app is working well or not. Deploying the application and making sure that it works well in the production with no bugs.</p>
                     </article>
         
                     <article>
@@ -262,27 +267,113 @@
 
                     <article>
                         <h2 id="skill">4. Skilss and Jobs</h2>
-                        <p></p>
+                        <p>To deliver the project with a great outcome, we need a skills full team that has many skills to handle the task of this project. There are some general requirements for everyone who joins this project:</p>
+                        <ul>
+                            <li>Teamwork skills. To facilitate the progress of this team members need to know how to work and collaborate with others.</li>
+                            <li>Presentation skills. To deliver the problems that need to be solved, we need to know how to present and address the problems to the team and present the product function to the client.</li>
+                            <li>Management skill. Finishing the task on time is important to keep the project on track, we need to manage everything to accomplish this.</li>
+                            <li>Experience in using version control with Git and Github.</li>
+                            <li>Have a Bachelor's degree in Computer Science, related fields, or equivalent experiences in industry.</li>
+                        </ul>
+                        <p>Specifically, we need to employ 4 positions for this project these are Machine Learning engineer, Software engineer, DevOps engineer, and Data scientist. For these positions, we need a specific experience and skills for each.</p>
+                        <ul>
+                            <li>Data wrangling, and knowing programming skills in R or Python with Numpy and Pandas are a must for processing the data.</li>
+                            <li>Experience in Data Analytics.</li>
+                            <li>Data visualization, to visualize the encoded data with Matplotlib in Python or ggplot3 in R.</li>
+                            <li>Familiar with big data tools like Hadoop or Apache Spark.</li>
+                        </ul>
+                        
+                        <p>Machine Learning engineers are responsible for architecting the model, preparing the data with data scientists, evaluating the model performance, and deploying the machine learning model to an API. Skills needed for this position:</p>
+                        <ul>
+                            <li>Strong Machine learning and deep learning knowledge.</li>
+                            <li>Familiar with deep learning frameworks and libraries like Tensorflow and Keras, OpenCV.</li>
+                            <li>Knowledge of Computer Vision.</li>
+                            <li>Strong math skills.</li>
+                            <li>Programming skills in Python.</li>
+                            <li>Knowledge of building API.</li>
+                        </ul>
+                        <p>Software Engineers, responsible for developing the User Interface and the back-end of the application, work with machine learning engineers to integrate the machine learning model into the application. the software engineers must have:</p>
+                        <ul>  
+                            <li>Strong programming skills in Javascript, and Typescript.</li>
+                            <li>Knowledge of React Native, Nodejs, and Expressjs.</li>
+                            <li>Understanding of design patterns and Object-Oriented Programming.</li>
+                            <li>Understanding of Algorithms and ability to apply them to optimize application performance.</li>
+                            <li>Experience in working with RestfulAPI.</li>
+                        </ul>
+
+                        <p>DevOps Engineers, Deploying the application is a very important phase to assist developers, ensure that the application is deployed smoothly to production servers, and manage the code. With experience in operating system architecture and database management system software installation, they optimize software development processes with an emphasis on efficiency and dependability. To work in this position we must have these skills:</p>
+                        <ul>
+                            <li>Experience in using cloud services, Azure, AWS, and Google Cloud.</li>
+                            <li>Experience with Docker.</li>
+                            <li>Proficiency in Linux and Unix scripting.</li>
+                            <li>Experience in infrastructure and development environments.</li>
+                        </ul>
+                        <p>These are mandatory and very crucial skills for each position to work in this project. There are many skills but these can be acquired while working. </p>
                     </article>
 
                     <article>
                         <h2 id="grreflex">5. Group reflection</h2>
-                        <p>I'm Phuoc (s4010791), when working with my group, I can see that we tried as hard as possible to complete the project. Although our team has only 2 members, everything went well and we collaborated with each other with great productivity. We all established a deadline for each area to complete our tasks, and we all completed them on time. I can see that my teammate takes great responsibility for the assignment, and even if our team is only two individuals, my teammate's effort and collaboration make our task easier to complete. After this assignment, the way we worked together was pretty well, but there are some aspects we should improve, specifically is on in the ways we communicate, we should take more meetings to get each other perception of the project to make it more consistent. When working with my teammate, I learned how to work and divide the tasks, making milestones for the project easier to complete each task.
-                        </p>
-                    
+                        <h3>Team Perception</h3>
+                        <p>Our team had to work really hard to produce the best outcomes for the project in order to finish this dermatological application development job. Due to the lack of human resources in my group compared to the other group, the quantity of work assigned to each member nearly doubles, adding to the project's perceived complexity for us. suffocation. Despite the numerous challenges that lay ahead, our team never gave up, and because to our efforts and dedication, we came very close to realizing our objectives. Due to his flexibility and coordination with me as we discussed and offered solutions to the challenge, Phuoc might be viewed as a prospective commander. To be able to do the task on time, he skillfully divided the work into two halves and capitalized on the skills of each team. T.Tin is not a very remarkable individual, but he has put in a lot of work in coming up with ideas and aiding in the creation of the project. Despite the tiny size of the group, we have discovered each other's talents. For instance, Phuoc has strengths like his numerous abilities in web development and logical thinking, while T.tin has skills like being able to gather information and provide recommendations to assist other members. We frequently lend a hand to and encourage one another because the workload is heavy and challenging. .We frequently lend a hand to and encourage one another because the workload is heavy and challenging. When one of us encounters a problem, the other will provide solutions, and we will work to resolve it together. Final thoughts: Despite our team's shortcomings in terms of number, it can ensure quality. Additionally, as we create this program, we hope to support medical professionals in their efforts to diagnose and cure diseases while enabling everyone to quickly and easily recognize the signs of skin conditions to prevent potentially fatal repercussions.</p>
+                        <h3>Individual Perception</h3>
+                        <p>I'm Phuoc (s4010791), when working with my group, I can see that we tried as hard as possible to complete the project. Although our team has only 2 members, everything went well and we collaborated with each other with great productivity. We all established a deadline for each area to complete our tasks, and we all completed them on time. I can see that my teammate takes great responsibility for the assignment, and even if our team is only two individuals, my teammate's effort and collaboration make our task easier to complete. After this assignment, the way we worked together was pretty well, but there are some aspects we should improve, specifically is on in the ways we communicate, we should take more meetings to get each other perception of the project to make it more consistent. When working with my teammate, I learned how to work and divide the tasks, making milestones for the project easier to complete each task.</p>
+                        <p>Group meetings note, Task assigning, and assignment progress of team 2 evidence, write in Notion:</p>
+                        <figure>
+                        <img src="./assert/Evidence.png" alt="evidence img">
+                        <figcaption>(Task assigning, Group Note of Team2, Write in Notion, 22 Aug 2023)</figcaption>
+                        </figure>                    
                     </article>
                 </div>
                 <article>
                     <h2 id="reference">Reference</h2>
                     <ol>
-                        <li>Purva Huilgo (18 August 2020) Top 4 Pre-Trained Models for Image Classification with Python Code, Analytics Vidhya website, accessed 25 August 2023. <a href="https://www.analyticsvidhya.com/blog/2020/08/top-4-pre-trained-models-for-image-classification-with-python-code/">https://www.analyticsvidhya.com/blog/2020/08/top-4-pre-trained-models-for-image-classification-with-python-code/</a></li>
-                        <li>Greeks for Greeks VGG-16 | CNN model, Greeks for Greeks website, accesses 25 August 2023. <a href="https://www.geeksforgeeks.org/vgg-16-cnn-model/">https://www.geeksforgeeks.org/vgg-16-cnn-model/</a></li>
-                        <li>Gaudenz Boesch VGG Very Deep Convolutional Networks (VGGNet) – What you need to know, Viso website, accesses 25 August 2023. <a href="https://viso.ai/deep-learning/vgg-very-deep-convolutional-networks/">https://viso.ai/deep-learning/vgg-very-deep-convolutional-networks/</a></li>
-                        <li>James Ankrum (17 Jun 2020) Diagnosing skin diseases using an AI-based dermatology consult, Science website, accessed 2 Septemper 2023. <a href="https://www.science.org/doi/10.1126/scitranslmed.abc8946">https://www.science.org/doi/10.1126/scitranslmed.abc8946</a></li>
-                        <li>Keras About Keras, Keras website, accessed 6 Septemper 2023. <a href="https://keras.io/about/">https://keras.io/about/</a></li>
-                        <li>Keras VGG16 and VGG19, Keras website, asscessed 6 Septemper 2023. https://keras.io/api/applications/vgg/</li>
-                        <li>Abhinav Sagar (19 Oct 2019) How to Easily Deploy Machine Learning Models Using Flask, Towards Data Science Website, asscessed 9Septemper 2023. <a href="https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4">https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4</a></li>
-                    </ol>
+    <li>
+        Purva Huilgo (18 August 2020) Top 4 Pre-Trained Models for Image Classification with Python Code, Analytics Vidhya website, accessed 25 August 2023. <a href="https://www.analyticsvidhya.com/blog/2020/08/top-4-pre-trained-models-for-image-classification-with-python-code/">https://www.analyticsvidhya.com/blog/2020/08/top-4-pre-trained-models-for-image-classification-with-python-code/</a>
+    </li>
+    <li>
+        Greeks for Greeks VGG-16 | CNN model, Greeks for Greeks website, accessed 25 August 2023. <a href="https://www.geeksforgeeks.org/vgg-16-cnn-model/">https://www.geeksforgeeks.org/vgg-16-cnn-model/</a>
+    </li>
+    <li>
+        Gaudenz Boesch VGG Very Deep Convolutional Networks (VGGNet) – What you need to know, Viso website, accessed 25 August 2023. <a href="https://viso.ai/deep-learning/vgg-very-deep-convolutional-networks/">https://viso.ai/deep-learning/vgg-very-deep-convolutional-networks/</a>
+    </li>
+    <li>
+        James Ankrum (17 Jun 2020) Diagnosing skin diseases using an AI-based dermatology consult, Science website, accessed 2 September 2023. <a href="https://www.science.org/doi/10.1126/scitranslmed.abc8946">https://www.science.org/doi/10.1126/scitranslmed.abc8946</a>
+    </li>
+    <li>
+        Keras About Keras, Keras website, accessed 6 September 2023. <a href="https://keras.io/about/">https://keras.io/about/</a>
+    </li>
+    <li>
+        Keras VGG16 and VGG19, Keras website, accessed 6 September 2023. <a href="https://keras.io/api/applications/vgg/">https://keras.io/api/applications/vgg/</a>
+    </li>
+    <li>
+        Abhinav Sagar (19 Oct 2019) How to Easily Deploy Machine Learning Models Using Flask, Towards Data Science Website, accessed 9 September 2023. <a href="https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4">https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4</a>
+    </li>
+    <li>
+        Wikipedia React Native, Wikipedia website, accessed 9 September 2023. <a href="https://vi.wikipedia.org/wiki/React_Native">https://vi.wikipedia.org/wiki/React_Native</a>
+    </li>
+    <li>
+        React Native, React Native website, accessed 16 September 2023. <a href="https://reactnative.dev/">https://reactnative.dev/</a>
+    </li>
+    <li>
+        Wikipedia Fine-tuning (deep learning), Wikipedia website, accessed 16 September 2023. <a href="https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)">https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)</a>
+    </li>
+    <li>
+        Saulo Barreto (16 June 2023) What Is Fine-Tuning in Neural Networks?, Baeldung website, accessed 16 September 2023. <a href="https://www.baeldung.com/cs/fine-tuning-nn#:~:text=Definition,one%20we%27re%20dealing%20with">https://www.baeldung.com/cs/fine-tuning-nn#:~:text=Definition,one%20we%27re%20dealing%20with</a>
+    </li>
+    <li>
+        Simplilearn (10 Jul 2023) Data Scientist Job Description: Role, Responsibilities & Skills, Simplilearn website, accessed 16 September 2023. <a href="https://www.simplilearn.com/data-scientist-job-description-article#:~:text=A%20Data%20Scientist%27s%20roles%20and,manner%2C%20and%20propose%20solutions%20and">https://www.simplilearn.com/data-scientist-job-description-article#:~:text=A%20Data%20Scientist%27s%20roles%20and,manner%2C%20and%20propose%20solutions%20and</a>
+    </li>
+    <li>
+        Resource for Employers Machine Learning Engineer job description, Resource for Employers website, accessed 16 September 2023. <a href="https://resources.workable.com/machine-learning-engineer-job-description#:~:text=A%20Machine%20Learning%20Engineer%20is,science%2C%20and%20expertise%20in%20statistics">https://resources.workable.com/machine-learning-engineer-job-description#:~:text=A%20Machine%20Learning%20Engineer%20is,science%2C%20and%20expertise%20in%20statistics</a>
+    </li>
+    <li>
+        Resource for Employers Mobile Developer job description, Resource for Employers website, accessed 16 September 2023. <a href="https://resources.workable.com/mobile-developer-job-description">https://resources.workable.com/mobile-developer-job-description</a>
+    </li>
+    <li>
+        Olivia Rowland  (19 Jul 2023) DevOps engineer: job description, Targetjobs website, accessed 16 September 2023. <a href="https://targetjobs.co.uk/careers-advice/job-descriptions/devops-engineer-job-description#:~:text=DevOps%20engineers%20build%2C%20test%20and,can%20be%20developed%20and%20released.&text=DevOps%20(development%20operations)%20is%20a,testing%2C%20releasing%20and%20updating%20software.">https://targetjobs.co.uk/careers-advice/job-descriptions/devops-engineer-job-description#:~:text=DevOps%20engineers%20build%2C%20test%20and,can%20be%20developed%20and%20released.&text=DevOps%20(development%20operations)%20is%20a,testing%2C%20releasing%20and%20updating%20software.</a>
+    </li>
+</ol>
+
                 </article>
 
             </article>
